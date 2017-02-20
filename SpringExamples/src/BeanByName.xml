@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean autowire="byName" class="com.AutowiringByName.Circle" id="circle123">
+      </bean>
+     <bean class="com.AutowiringByName.Point" id="center">
+      <property name="x" value="10"></property>
+      <property name="y" value="10"></property>
+     </bean>
+     
+     <bean class="com.AutowiringByName.Point" id="center1">
+      <property name="x" value="100"></property>
+      <property name="y" value="100"></property>
+     </bean>
+     
+     <bean class="com.AutowiringByName.Point" id="center2">
+      <property name="x" value="1000"></property>
+      <property name="y" value="1000"></property>
+     </bean>
+    </beans>
